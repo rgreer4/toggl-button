@@ -39,14 +39,15 @@ togglbutton.render('.window-header:not(.toggl)', {observe: true}, function (elem
 /* Checklist buttons */
 togglbutton.render('.checklist-item-details:not(.toggl)', {observe: true}, function (elem) {
   var link,
-    projectElem = $('.board-header > a'),
+    //projectElem = $('.board-header > a'),
+    projectElem = $('.card-detail-title-assist'),
     titleElem = $('.window-title h2'),
     taskElem = $('.checklist-item-details-text', elem);
 
   link = togglbutton.createTimerLink({
     className: 'trello',
     buttonType: 'minimal',
-    projectName: projectElem.innerText,
+    projectName: projectElem.innerText.split(' ')[0],
     description: titleElem.innerText + ' - ' + taskElem.innerText,
   });
 
