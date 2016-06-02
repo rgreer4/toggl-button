@@ -1,3 +1,5 @@
+NOTE: Modified to allow auto-selection of Trello projects from the first word of the card title instead of the board name.
+
 # Toggl Button Chrome extension
 
 Add Toggl one-click time tracking to popular web tools.
